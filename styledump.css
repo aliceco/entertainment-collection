@@ -1,0 +1,45 @@
+/* Home */
+
+.image {
+    background-image: url("indexBild.jpg");
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .image {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+  } 
+  
+   #summary {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 800px;
+    padding-top: 30px; 
+    min-width: 500px;
+  } 
+  
+  #exampleCovers {
+    top: 200px;
+    left: 900px;
+    padding: 30px; 
+  }
+
+  nav {
+    text-align: right;
+    padding-right: 40px;
+    margin-top: -60px;
+  }
+  
+  nav a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+  }

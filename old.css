@@ -1,0 +1,191 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #272727;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+}
+
+header h1 {
+  color: white;
+  font-size: 40px;
+  text-align: left; 
+}
+
+nav {
+  text-align: right;
+  padding-right: 40px;
+  margin-top: -35px;
+}
+
+nav a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+menu {
+  overflow: hidden;
+  position: relative;
+  background: #1d1d1d;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+menu li, a {
+  list-style-type: none;
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding-right: 30px;
+  padding-left: 40px;
+  content: center;
+}
+
+
+a:hover {
+  color: #979797;
+}
+
+/* home */
+.img {
+  width: 100vw;
+  height: auto;
+}
+
+  
+#summary {
+  text-align: left;
+  font-size: 20px;
+  margin-left: 100px;
+  margin-right: 800px;
+  padding-top: 30px; 
+  min-width: 500px;
+} 
+
+#exampleCovers {
+  top: 200px;
+  left: 900px;
+  padding: 30px; 
+}
+
+/* Film */
+.genre p {
+  font-size: 20px;
+  padding-left: 30px;
+}
+
+.genre li {
+  list-style: none;
+}
+
+footer {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  background: #272727;
+}
+
+
+/* Utan Flex */
+
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #272727;
+  padding-top: 3vw;
+  padding-bottom: 5vw;
+  padding-left: 3vw;
+}
+
+header h1 {
+  color: white;
+  font-size: 5vw;
+  text-align: left;
+  padding-left: 4vw;
+}
+
+nav {
+  text-align: right;
+  padding-right: 4vw;
+  margin-top: -3.5vw;
+  margin-right: 5vw;
+  width: 95vw;
+  height: auto;
+}
+
+nav a {
+  white-space: nowrap;
+  color: white;
+  font-size: 2vw;
+  text-decoration: none;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+menu {
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: relative;
+  background: #1d1d1d;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+menu a {
+  font-size: 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding-right: 40px;
+  padding-left: 40px;
+  content: center;
+}
+
+a:hover {
+  color: #979797;
+}
+
+.main-container {
+  display: grid;
+  position: relative;
+}
+
+#header-summary {
+  position: absolute;
+}
+
+#example-pictures {
+  position: absolute;
+}
+
+#img {
+  width: 100vw;
+  height: auto;
+  margin-bottom: 0;
+}
+
+#footer {
+  position: absolute;
+  width: 100vw;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding: 15px;
+  background: #272727;
+}
