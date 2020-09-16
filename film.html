@@ -3,34 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Film Suggestions</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style2.css" rel="stylesheet" />
+    <title>Film suggestions</title>
+    <!-- Java script for navigation menu -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("body").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("body").style.marginLeft = "0";
+      }
+    </script>
   </head>
-  <body>
-    <header class="header">
-      <h1>Film Suggestions</h1>
-      <nav>
-        <a href="./index.html">Home</a>
+  <body id="body">
+    <!--nav bar -->
+    <header>
+      <topnav class="topnav">
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>
+        <a href="./index2.html">Home</a>
         <a href="">About us</a>
-        <a href="">Menu</a>
-      </nav>
+      </topnav>
+      <!-- Sidebar thingy -->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./film.html">Film</a>
+        <a href="">Tv-Series</a>
+        <a href="">Photography</a>
+        <a href="">Books</a>
+        <a href="">Youtube</a>
+        <a href="">Podcast</a>
+      </div>
     </header>
+    <article class="genre-nav">
+      <p>hello</p>
 
-    <!-- Menu is supposed to be able to disappear -->
-    <menu>
-      <a href="./film.html">Film</a>
-      <a href="">Tv-Series</a>
-      <a href="">Photography</a>
-      <a href="">Books</a>
-      <a href="">Youtube</a>
-      <a href="">Podcast</a>
-    </menu>
-
-    <article class="genre">
-      <p>Genre</p>
-      <ul>
-        <li>Scary</li>
-      </ul>
     </article>
 
     <footer id="footer">
