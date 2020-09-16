@@ -1,12 +1,16 @@
 body {
+    font-family: ;
     margin: 0;
     padding: 0;
     background: #272727;
   }
 
+/* @media min width (laptop) */
+
 .topnav {
     display: flex;
     justify-content: flex-start;
+    
 
 }
 
@@ -19,6 +23,51 @@ body {
     padding-left: 6vw;
     /* padding-bottom: 2vw; */
 }
+
+.openbtn {
+    font-family: inherit;
+    font-size: 1.2rem;
+    cursor: pointer; 
+    border: none; 
+    color: white;
+    background-color: #272727;
+    padding-top: 3.7vw;
+    padding-left: 6vw;
+    outline: none;
+
+}
+
+.sidebar {
+    height: 100vw;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #242424;
+    overflow-x: hidden; /* Keeps text hidden when bar not there*/
+    transition: 0.5s;
+    padding-top: 4rem;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block; /* Keeps the text going*/
+    transition: 0.3s;
+
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 2rem;
+    margin-left: 50px;
+}
+
 
 .menu {
     display: flex;
@@ -52,7 +101,7 @@ article h2 {
 article h1 {
     order: 1;
     justify-self: center;
-    font-size: 5vw;
+    font-size: 5.5vw;
     margin-top: 0; 
 }
 
@@ -65,9 +114,24 @@ article p {
 }
 
 
-
 #footer {
     display: flex;
     justify-content: center;
     color: white;
+}
+
+#body {
+    transition: margin-left .5s;
+  }
+
+/* Media screen */
+
+@media screen and (max-width: 700px){
+    .topnav a {font-size: 1.2rem;}
+    .topnav {padding-top: 1.8vw; padding-left: 1vw;}
+    .openbtn {padding-top: 2.7vw}
+    article h2 {font-size: 5vw}
+    article h1 {font-size: 8vw}
+    article p {font-size: 1.2rem;}
+    footer {font-size: 1rem}
 }

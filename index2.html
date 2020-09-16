@@ -5,24 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style2.css" rel="stylesheet" />
     <title>Entertainment Hub</title>
+    <!-- Java script for navigation menu -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("body").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("body").style.marginLeft= "0";
+      }
+      </script>
+
   </head>
-  <body>
+  <body id="body">
       <!--nav bar -->
     <header>
       <topnav class="topnav">
-        <a href="">Menu</a>
+        <button class="openbtn" onclick="openNav()">☰ Menu</button> 
+        <!-- <a href="">Menu</a> -->
         <a href="">Home</a>
         <a href="">About us</a>
       </topnav>
       <!-- Drop down menu-->
-      <menu class="menu">
+      <!-- <menu class="menu">
         <a href="">Film</a>
         <a href="">Tv-Series</a>
         <a href="">Photography</a>
         <a href="">Books</a>
         <a href="">Youtube</a>
         <a href="">Podcast</a>
-      </menu>
+      </menu> -->
+
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="">Film</a>
+        <a href="">Tv-Series</a>
+        <a href="">Photography</a>
+        <a href="">Books</a>
+        <a href="">Youtube</a>
+        <a href="">Podcast</a>
+      </div>
+
     </header>
     <article>
       <h2>Welcome to the</h2>
