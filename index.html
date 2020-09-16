@@ -3,54 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entertainment Hub - Home</title>
     <link href="style.css" rel="stylesheet" />
+    <title>Entertainment Hub</title>
+    <!-- Java script for navigation menu -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("body").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("body").style.marginLeft = "0";
+      }
+    </script>
   </head>
-
-  <body>
+  <body id="body">
+    <!--nav bar -->
     <header>
-      <h1>Entertainment Hub</h1>
-      <nav>
-        <a href="./index.html" target="_self">Home</a>
+      <topnav class="topnav">
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>
+        <a href="./index.html">Home</a>
         <a href="">About us</a>
-        <a href="">Menu</a>
-      </nav>
-    </header>
-
-    <menu>
-      <a href="./film.html" target="_self">Film</a>
-      <a href="">Tv-Series</a>
-      <a href="">Photography</a>
-      <a href="">Books</a>
-      <a href="">Youtube</a>
-      <a href="">Podcast</a>
-    </menu>
-
-    <main>
-      <div class="main-container">
-        <img id="img" src="indexBild.jpg" alt="Bakgrundsbild med solnedgång" />
-        <!-- Bör fundera på vad som ska hända om man inte skulle kunna öppna bilden -->
-        <section id="header-summary">
-          <h2>
-            Welcome to the Entertainment Hub. This is the place where you'll be
-            able to find tips on what to watch, read, listen and look at. We
-            have all kind of entertainment sources you could thing of!
-          </h2>
-        </section>
-        <aside></aside>
-        <!-- <div id="example-pictures">
-          <img
-            src="https://resizing.flixster.com/N7aWhwhd6Sm3_2D5qUQaK9M9t4U=/206x305/v1.bTsxMTE2NjcyNTtqOzE4NjI0OzEyMDA7ODAwOzEyMDA"
-            alt="Inception movie c"
-          />
-          <img
-            src="https://images-na.ssl-images-amazon.com/images/I/814a7YBMTQL.jpg"
-            alt="Ready Player ONe book cover"
-            width="200"
-          />
-        </div> -->
+      </topnav>
+      <!-- Sidebar thingy -->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./film.html">Film</a>
+        <a href="">Tv-Series</a>
+        <a href="">Photography</a>
+        <a href="">Books</a>
+        <a href="">Youtube</a>
+        <a href="">Podcast</a>
       </div>
-    </main>
+    </header>
+    <!-- Article or something else? -->
+    <article id="home-summary">
+      <h2>Welcome to the</h2>
+      <h1>Entertainment Hub</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo unde
+        eveniet earum sit sapiente assumenda itaque aspernatur, repellendus
+        placeat animi ea eos culpa dolorem doloribus obcaecati minima delectus
+        omnis possimus ut incidunt quos, iusto officiis. Adipisci maiores eaque
+        similique assumenda exercitationem libero doloremque accusantium tenetur
+        numquam ipsam! Asperiores, similique consequuntur.Lorem ipsum dolor sit
+        amet consectetur, adipisicing elit. Explicabo eaque nesciunt pariatur at
+        fuga sunt atque sapiente provident distinctio. Esse adipisci
+        praesentium, quas vel consequuntur delectus provident facilis cumque
+        consequatur, eligendi numquam soluta harum velit voluptate aut ab
+        quisquam ut? Blanditiis corporis deserunt fuga eveniet, illo esse
+        voluptates vel dolorem.
+      </p>
+      <h3>Some of my current favourites:</h3>
+    </article>
+    <article id="example-pictures">
+      <img
+        src="https://resizing.flixster.com/N7aWhwhd6Sm3_2D5qUQaK9M9t4U=/206x305/v1.bTsxMTE2NjcyNTtqOzE4NjI0OzEyMDA7ODAwOzEyMDA"
+        alt="Inception movie poster"
+        width="250"
+      />
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/814a7YBMTQL.jpg"
+        alt="Ready Player ONe book cover"
+        width="250"
+      />
+
+      <img
+        src="https://i.pinimg.com/originals/d1/13/37/d113371ae7b50d8eac69a21ad889e481.jpg"
+        alt="Lucifer promotional poster"
+        width="250"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/5/58/Suits-season9-poster.png"
+        alt="Suits promotional poster"
+        width="250"
+      />
+    </article>
 
     <footer id="footer">
       <p>&copy; 2020 by Alice Cohen</p>

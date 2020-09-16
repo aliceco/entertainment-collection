@@ -1,103 +1,152 @@
-* {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+body {
+font-family:; 
   margin: 0;
   padding: 0;
-  /* background: #272727; */
-}
-
-/* undivk flex */
-header {
   background: #272727;
-  width: 100vw;
-  padding-top: 3vw;
-  padding-bottom: 5vw;
-  padding-left: 3vw;
 }
 
-header h1 {
-  color: white;
-  font-size: 4vw;
-  text-align: left;
-  padding-left: 4vw;
-}
+/* @media min width (laptop) */
 
-nav {
-  text-align: right;
-  padding-right: 4vw;
-  margin-top: -3.5vw;
-  margin-right: 5vw;
-  width: 95vw;
-  height: auto;
-}
-
-nav a {
-  /* white-space: nowrap; what is this? */
-  color: white;
-  font-size: 2vw;
-  text-decoration: none;
-  padding-left: 3vw;
-  padding-right: 3vw;
-}
-
-/*  använd flex */
-
-menu {
+.topnav {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100vw;
-  overflow: hidden;
-  position: relative;
-  background: #1d1d1d;
-  padding: 2vw;
-  margin: 0;
+  justify-content: flex-start;
 }
 
-menu a {
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  padding-right: 4vw;
-  padding-left: 4vw;
-  /* content: center; what is this?*/
-}
-
-a:hover {
-  color: #979797;
-}
-
-.main-container {
-  /* position: relative; */
-  display: flex;
-  flex-flow: row wrap;
-}
-
-#header-summary {
+.topnav a {
   order: 0;
-  max-width: 50vw;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding-top: 4vw;
+  padding-left: 6vw;
+  /* padding-bottom: 2vw; */
+}
+
+.openbtn {
+  font-family: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #272727;
+  padding-top: 3.7vw;
+  padding-left: 6vw;
+  outline: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #242424;
+  overflow-x: hidden; /* Keeps text hidden when bar not there*/
+  transition: 0.5s;
+  padding-top: 4rem;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block; /* Keeps the text going*/
+  transition: 0.3s;
+}
+
+.sidebar .closebtn {
   position: absolute;
-  font-size: 1,4vw;
-  padding: 4vw;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  margin-left: 50px;
 }
 
-#example-pictures {
-  order: 1; 
-  align-self: flex-end;
-  /* position: absolute; */
+#home-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
-#img {
-  width: 100vw;
-  height: auto;
-  margin-bottom: 0;
+#home-summary h2 {
+  order: 0;
+  font-size: 2vw;
+  padding-top: 1rem;
+}
+
+#home-summary h1 {
+  order: 1;
+  justify-self: center;
+  font-size: 5.5vw;
+  margin-top: 0;
+}
+
+#home-summary p {
+  order: 2;
+  text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-bottom: 4vw;
+}
+
+#home-summary h3 {
+    order: 3; 
+    padding-bottom: 1vw;
 }
 
 #footer {
-  position: absolute;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
   color: white;
-  font-size: 15px;
-  text-align: center;
-  padding: 15px;
-  background: #272727;
+}
+
+#example-pictures {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  padding-bottom: 1vw;
+}
+
+
+/* Film Suggestions */
+
+.genre-nav {
+    display: flex;
+    
+}
+
+/* Media screen */
+/* the menu is very wide - fix? */
+@media screen and (max-width: 700px) {
+  .topnav a {
+    font-size: 1.2rem;
+  }
+  .topnav {
+    padding-top: 1.8vw;
+    padding-left: 1vw;
+  }
+  .openbtn {
+    padding-top: 2.7vw;
+  }
+  article h2 {
+    font-size: 5vw;
+  }
+  article h1 {
+    font-size: 8vw;
+  }
+  article p {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 1rem;
+  }
+  .sidebar {
+    padding-top: 4rem;
+  }
+  .sidebar a {
+    font-size: 1.2rem;
+  }
 }
