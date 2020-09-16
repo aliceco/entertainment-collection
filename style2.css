@@ -1,137 +1,144 @@
 body {
-    font-family: ;
-    margin: 0;
-    padding: 0;
-    background: #272727;
-  }
+  font-family: ;
+  margin: 0;
+  padding: 0;
+  background: #272727;
+}
 
 /* @media min width (laptop) */
 
 .topnav {
-    display: flex;
-    justify-content: flex-start;
-    
-
+  display: flex;
+  justify-content: flex-start;
 }
 
 .topnav a {
-    order: 0;
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-    padding-top: 4vw;
-    padding-left: 6vw;
-    /* padding-bottom: 2vw; */
+  order: 0;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  padding-top: 4vw;
+  padding-left: 6vw;
+  /* padding-bottom: 2vw; */
 }
 
 .openbtn {
-    font-family: inherit;
-    font-size: 1.2rem;
-    cursor: pointer; 
-    border: none; 
-    color: white;
-    background-color: #272727;
-    padding-top: 3.7vw;
-    padding-left: 6vw;
-    outline: none;
-
+  font-family: inherit;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #272727;
+  padding-top: 3.7vw;
+  padding-left: 6vw;
+  outline: none;
 }
 
 .sidebar {
-    height: 100vw;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #242424;
-    overflow-x: hidden; /* Keeps text hidden when bar not there*/
-    transition: 0.5s;
-    padding-top: 4rem;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #242424;
+  overflow-x: hidden; /* Keeps text hidden when bar not there*/
+  transition: 0.5s;
+  padding-top: 4rem;
 }
 
 .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block; /* Keeps the text going*/
-    transition: 0.3s;
-
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block; /* Keeps the text going*/
+  transition: 0.3s;
 }
 
 .sidebar .closebtn {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 2rem;
-    margin-left: 50px;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  margin-left: 50px;
 }
 
-
-.menu {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: wrap;
-    /* background-color: #1b1b1b; */
-    padding: 1.5vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+#home-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
 }
 
-.menu a {
-    font-size: 1rem;
-    color: white;
-    text-decoration: none;
+#home-summary h2 {
+  order: 0;
+  font-size: 2vw;
+  padding-top: 60px;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+#home-summary h1 {
+  order: 1;
+  justify-self: center;
+  font-size: 5.5vw;
+  margin-top: 0;
 }
 
-article h2 {
-    order: 0;
-    font-size: 2vw;
-    padding-top: 60px; 
+#home-summary p {
+  order: 2;
+  text-align: center;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-bottom: 4vw;
 }
 
-article h1 {
-    order: 1;
-    justify-self: center;
-    font-size: 5.5vw;
-    margin-top: 0; 
+#home-summary h3 {
+    order: 3; 
+    padding-bottom: 1vw;
 }
-
-article p {
-    order: 2; 
-    text-align: center;
-    margin-left: 15vw;
-    margin-right: 15vw; 
-    padding-bottom: 4vw; 
-}
-
 
 #footer {
-    display: flex;
-    justify-content: center;
-    color: white;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
-#body {
-    transition: margin-left .5s;
-  }
+#example-pictures {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  padding-bottom: 1vw;
+}
 
 /* Media screen */
-
-@media screen and (max-width: 700px){
-    .topnav a {font-size: 1.2rem;}
-    .topnav {padding-top: 1.8vw; padding-left: 1vw;}
-    .openbtn {padding-top: 2.7vw}
-    article h2 {font-size: 5vw}
-    article h1 {font-size: 8vw}
-    article p {font-size: 1.2rem;}
-    footer {font-size: 1rem}
+/* the menu is very wide - fix? */
+@media screen and (max-width: 700px) {
+  .topnav a {
+    font-size: 1.2rem;
+  }
+  .topnav {
+    padding-top: 1.8vw;
+    padding-left: 1vw;
+  }
+  .openbtn {
+    padding-top: 2.7vw;
+  }
+  article h2 {
+    font-size: 5vw;
+  }
+  article h1 {
+    font-size: 8vw;
+  }
+  article p {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 1rem;
+  }
+  .sidebar {
+    padding-top: 4rem;
+  }
+  .sidebar a {
+    font-size: 1.2rem;
+  }
 }

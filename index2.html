@@ -11,33 +11,22 @@
         document.getElementById("mySidebar").style.width = "250px";
         document.getElementById("body").style.marginLeft = "250px";
       }
-      
+
       function closeNav() {
         document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("body").style.marginLeft= "0";
+        document.getElementById("body").style.marginLeft = "0";
       }
-      </script>
-
+    </script>
   </head>
   <body id="body">
-      <!--nav bar -->
+    <!--nav bar -->
     <header>
       <topnav class="topnav">
-        <button class="openbtn" onclick="openNav()">☰ Menu</button> 
-        <!-- <a href="">Menu</a> -->
-        <a href="">Home</a>
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>
+        <a href="./index2.html">Home</a>
         <a href="">About us</a>
       </topnav>
-      <!-- Drop down menu-->
-      <!-- <menu class="menu">
-        <a href="">Film</a>
-        <a href="">Tv-Series</a>
-        <a href="">Photography</a>
-        <a href="">Books</a>
-        <a href="">Youtube</a>
-        <a href="">Podcast</a>
-      </menu> -->
-
+      <!-- Sidebar thingy -->
       <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="">Film</a>
@@ -47,9 +36,9 @@
         <a href="">Youtube</a>
         <a href="">Podcast</a>
       </div>
-
     </header>
-    <article>
+    <!-- Article or something else? -->
+    <article id="home-summary">
       <h2>Welcome to the</h2>
       <h1>Entertainment Hub</h1>
       <p>
@@ -66,6 +55,30 @@
         quisquam ut? Blanditiis corporis deserunt fuga eveniet, illo esse
         voluptates vel dolorem.
       </p>
+      <h3>Some of my current favourites:</h3>
+    </article>
+    <article id="example-pictures">
+      <img
+        src="https://resizing.flixster.com/N7aWhwhd6Sm3_2D5qUQaK9M9t4U=/206x305/v1.bTsxMTE2NjcyNTtqOzE4NjI0OzEyMDA7ODAwOzEyMDA"
+        alt="Inception movie poster"
+        width="250"
+      />
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/814a7YBMTQL.jpg"
+        alt="Ready Player ONe book cover"
+        width="250"
+      />
+
+      <img
+        src="https://i.pinimg.com/originals/d1/13/37/d113371ae7b50d8eac69a21ad889e481.jpg"
+        alt="Lucifer promotional poster"
+        width="250"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/5/58/Suits-season9-poster.png"
+        alt="Suits promotional poster"
+        width="250"
+      />
     </article>
 
     <footer id="footer">
