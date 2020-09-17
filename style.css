@@ -1,5 +1,4 @@
 body {
-font-family:; 
   margin: 0;
   padding: 0;
   background: #272727;
@@ -13,17 +12,20 @@ font-family:;
 }
 
 .topnav a {
-  order: 0;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   color: white;
   text-decoration: none;
   padding-top: 4vw;
   padding-left: 6vw;
-  /* padding-bottom: 2vw; */
+}
+
+.topnav a:hover , .openbtn:hover {
+  color: #818181;
 }
 
 .openbtn {
-  font-family: inherit;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   cursor: pointer;
   border: none;
@@ -34,7 +36,12 @@ font-family:;
   outline: none;
 }
 
+.sidebar a:hover{
+  color: white;
+}
+
 .sidebar {
+  font-family: 'Roboto', sans-serif;
   height: 100%;
   width: 0;
   position: fixed;
@@ -64,11 +71,14 @@ font-family:;
   margin-left: 50px;
 }
 
+/* FONT FAMILY WHAT */
+
 #home-summary {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 #home-summary h2 {
@@ -82,6 +92,7 @@ font-family:;
   justify-self: center;
   font-size: 5.5vw;
   margin-top: 0;
+  letter-spacing: 0.2rem;
 }
 
 #home-summary p {
@@ -95,6 +106,7 @@ font-family:;
 #home-summary h3 {
     order: 3; 
     padding-bottom: 1vw;
+    font-style: italic;
 }
 
 #footer {
@@ -110,6 +122,7 @@ font-family:;
   padding-bottom: 1vw;
 }
 
+}
 
 /* Film Suggestions */
 
@@ -131,13 +144,13 @@ font-family:;
   .openbtn {
     padding-top: 2.7vw;
   }
-  article h2 {
+  #home-summary h2 {
     font-size: 5vw;
   }
-  article h1 {
+  #home-summary h1 {
     font-size: 8vw;
   }
-  article p {
+  #home-summary p {
     font-size: 1.2rem;
   }
   footer {
@@ -149,4 +162,5 @@ font-family:;
   .sidebar a {
     font-size: 1.2rem;
   }
+
 }
