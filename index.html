@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Entertainment Hub</title>
     <!-- Java script for navigation menu -->
     <script>
@@ -40,7 +43,7 @@
     </header>
     <!-- Article or something else? -->
     <article id="home-summary">
-      <h2>Welcome to the</h2>
+      <!-- <h2>Welcome to the</h2> -->
       <h1>Entertainment Hub</h1>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo unde
@@ -56,37 +59,96 @@
         quisquam ut? Blanditiis corporis deserunt fuga eveniet, illo esse
         voluptates vel dolorem.
       </p>
-      <h3>Some of my current favourites:</h3>
+      <p id="favourites">Current favourites</p>
     </article>
-    <article id="example-pictures">
-      <a href="https://www.rottentomatoes.com/m/inception" target="_blank">
-        <img class="inception1"
-        src="https://resizing.flixster.com/N7aWhwhd6Sm3_2D5qUQaK9M9t4U=/206x305/v1.bTsxMTE2NjcyNTtqOzE4NjI0OzEyMDA7ODAwOzEyMDA"
-        alt="Inception movie poster"
-        width="250"
-      />
-      </a>
-      <a href="https://www.adlibris.com/se/bok/ready-player-one-9780099560432" target="_blank">
-        <img
-          src="https://images-na.ssl-images-amazon.com/images/I/814a7YBMTQL.jpg"
-          alt="Ready Player One book cover"
-          width="250"
-        />
-      </a>
-      <a href="https://www.imdb.com/title/tt4052886/" target="_blank">
-        <img 
-          src="https://i.pinimg.com/originals/d1/13/37/d113371ae7b50d8eac69a21ad889e481.jpg"
-          alt="Lucifer promotional poster"
-          width="250"
-        />
-      </a>
-      <a href="https://www.imdb.com/title/tt1632701/?ref_=fn_al_tt_1" target="_blank">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/5/58/Suits-season9-poster.png"
-          alt="Suits promotional poster"
-          width="250"
-        />
-      </a>
+    <article>
+      <div id="h-inception">
+        <a href="https://www.imdb.com/title/tt1375666/" target="_blank">
+          <img
+            src="https://resizing.flixster.com/N7aWhwhd6Sm3_2D5qUQaK9M9t4U=/206x305/v1.bTsxMTE2NjcyNTtqOzE4NjI0OzEyMDA7ODAwOzEyMDA"
+            alt="Inception movie poster"
+          />
+        </a>
+        <div id="h-inception-text">
+          <a href="https://www.imdb.com/title/tt1375666/" target="_blank">Inception - dir. Christoffer Nolan</a>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab
+            facere voluptatibus nesciunt porro. Ea laudantium, ipsum minima odio
+            optio aliquam at eveniet odit vel consequatur dignissimos earum non
+            necessitatibus perferendis ratione minus vero aliquid eum maiores id
+            corrupti. Voluptatum nihil magni reiciendis quisquam ab voluptates.
+            Exercitationem incidunt alias eius! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Assumenda, repellat itaque! Quas
+            molestias, officia nihil quisquam harum eligendi quaerat
+            consectetur, vero, itaque illo soluta maxime aliquam alias
+            aspernatur reprehenderit voluptatibus sit amet voluptas fugiat
+            perferendis dolorum quibusdam eos?
+          </p>
+          <p>
+           10/10 stars
+          </p>
+        </div>
+      </div>
+
+      <div id="h-rp1">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab
+          facere voluptatibus nesciunt porro. Ea laudantium, ipsum minima odio
+          optio aliquam at eveniet odit vel consequatur dignissimos earum non
+          necessitatibus perferendis ratione minus vero aliquid eum maiores id
+          corrupti. Voluptatum nihil magni reiciendis quisquam ab voluptates.
+          Exercitationem incidunt alias eius! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Assumenda, repellat itaque! Quas
+          molestias, officia nihil quisquam harum eligendi quaerat consectetur,
+          vero, itaque illo soluta maxime aliquam alias aspernatur reprehenderit
+          voluptatibus sit amet voluptas fugiat perferendis dolorum quibusdam
+          eos? Doloribus esse autem vero adipisci fugit ullam eos quis
+          architecto laborum. Saepe quo non veniam ipsa expedita doloribus
+          nobis, aspernatur quidem deserunt asperiores iure pariatur esse illo
+          quis alias porro?
+        </p>
+        <a
+          href="https://www.adlibris.com/se/bok/ready-player-one-9780099560432"
+          target="_blank"
+        >
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/I/814a7YBMTQL.jpg"
+            alt="Ready Player One book cover"
+            width="200"
+          />
+        </a>
+      </div>
+      <div id="h-lucifer">
+        <a href="https://www.imdb.com/title/tt4052886/" target="_blank">
+          <img
+            src="https://i.pinimg.com/originals/d1/13/37/d113371ae7b50d8eac69a21ad889e481.jpg"
+            alt="Lucifer promotional poster"
+            width="200"
+          />
+        </a>
+        <div id="h-lucifer-text">
+          <a href="https://www.imdb.com/title/tt4052886/" target="_blank">Lucifer - creator Tom Kapinos</a>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab
+            facere voluptatibus nesciunt porro. Ea laudantium, ipsum minima odio
+            optio aliquam at eveniet odit vel consequatur dignissimos earum non
+            necessitatibus perferendis ratione minus vero aliquid eum maiores id
+            corrupti. Voluptatum nihil magni reiciendis quisquam ab voluptates.
+            Exercitationem incidunt alias eius! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Assumenda, repellat itaque! Quas
+            molestias, officia nihil quisquam harum eligendi quaerat consectetur,
+            vero, itaque illo soluta maxime aliquam alias aspernatur reprehenderit
+            voluptatibus sit amet voluptas fugiat perferendis dolorum quibusdam
+            eos? Doloribus esse autem vero adipisci fugit ullam eos quis
+            architecto laborum. Saepe quo non veniam ipsa expedita doloribus
+            nobis, aspernatur quidem deserunt asperiores iure pariatur esse illo
+            quis alias porro?
+          </p>
+          <p>
+            10/10 stars
+           </p>
+        </div>
+      </div>
     </article>
     <footer id="footer">
       <p>&copy; 2020 by Alice Cohen</p>
