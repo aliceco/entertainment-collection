@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #272727;
+  font-family: "Roboto", sans-serif;
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.topnav a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  padding-top: 2vw;
+  padding-left: 4vw;
+}
+
+.topnav a:hover,
+.openbtn:hover {
+  color: #818181;
+}
+
+.openbtn {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #272727;
+  padding-top: 1.7vw;
+  padding-left: 4vw;
+  outline: none;
+}
+
+.sidebar a:hover {
+  color: white;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1a191954;
+  overflow-x: hidden; /* Keeps text hidden when bar not there*/
+  transition: 0.5s;
+  padding-top: 4rem;
+  filter: drop-shadow(1vw 1vw 1vw #00000056);
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #b8b8b8;
+  display: block; /* Keeps the text going*/
+  transition: 0.3s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav a {
+    font-size: 1.2rem;
+  }
+  .topnav {
+    padding-top: 1.8vw;
+    padding-left: 1vw;
+  }
+  .openbtn {
+    padding-top: 1vw;
+    font-size: 1.2rem;
+  }
+  .sidebar {
+    padding-top: 4rem;
+  }
+  .sidebar a {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
