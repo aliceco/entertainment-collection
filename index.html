@@ -3,52 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entertainment Hub - Home</title>
+    <meta name="Description" content="Put your description here.">
     <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Entertainment Hub</title>
+    <!-- Java script for navigation menu -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("body").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("body").style.marginLeft = "0";
+      }
+    </script>
   </head>
-
-  <body>
+  <body id="body">
+    <!--nav bar -->
     <header>
-      <h1>Entertainment Hub</h1>
-      <nav>
-        <a href="./index.html" target="_self">Home</a>
+      <topnav class="topnav">
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>
+        <a href="./index.html">Home</a>
         <a href="">About us</a>
-        <a href="">Menu</a>
-        <a href="#">Blablahblah</a>
-      </nav>
-    </header>
-
-    <menu>
-      <a href="./film.html" target="_self">Film</a>
-      <a href="">Tv-Series</a>
-      <a href="">Photography</a>
-      <a href="">Books</a>
-      <a href="">Youtube</a>
-      <a href="">Podcast</a>
-    </menu>
-
-    <main>
-      <div class="main-container">
-        <aside>
-
-        </aside>
-        <section id="main-content">
-
-        </section>
-        <img id="img" src="indexBild.jpg" alt="" />
-        <div id="header-summary">
-          <h2>
-            A list of suggestions for different kinds of entertainment to watch,
-            listen or read.
-          </h2>
-        </div>
-        <!-- <div id="example-pictures">
-            <img src="https://resizing.flixster.com/N7aWhwhd6Sm3_2D5qUQaK9M9t4U=/206x305/v1.bTsxMTE2NjcyNTtqOzE4NjI0OzEyMDA7ODAwOzEyMDA" alt="Inception movie c">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/814a7YBMTQL.jpg" alt="Ready Player ONe book cover" width="200">  
-           </div> -->
+      </topnav>
+      <!-- Sidebar thingy -->
+      <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="./film.html">Film</a>
+        <a href="">Tv-Series</a>
+        <a href="">Photography</a>
+        <a href="">Books</a>
+        <a href="">Youtube</a>
+        <a href="">Podcast</a>
       </div>
-    </main>
+    </header>
+    <!-- Article or something else? -->
+    <article id="home-summary">
+      <!-- <h2>Welcome to the</h2> -->
+      <h1>Entertainment Hub</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        provident, est autem quis labore atque explicabo laborum iste eveniet
+        iure voluptate in ipsum! Voluptate eius ullam dignissimos repellat aut
+        explicabo, excepturi veniam magnam quo cumque culpa reprehenderit
+        repellendus quod esse minus quasi? Quisquam, nemo ipsa? Excepturi nemo
+        consequuntur magni saepe.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, neque.
+      </p>
+      <p>Scroll down to see my current favourites</p>
+    </article>
 
+    <p class="h-categories">Movie</p>
+    <article>
+      <div class="fav-container1">
+        <a href="https://www.imdb.com/title/tt1375666/" target="_blank">
+          <img
+            src="https://resizing.flixster.com/N7aWhwhd6Sm3_2D5qUQaK9M9t4U=/206x305/v1.bTsxMTE2NjcyNTtqOzE4NjI0OzEyMDA7ODAwOzEyMDA"
+            alt="Inception movie poster"
+          />
+        </a>
+        <div class="fav-container1-text">
+          <a href="https://www.imdb.com/title/tt1375666/" target="_blank"
+            >Inception - dir. Christoffer Nolan</a
+          >
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab
+            facere voluptatibus nesciunt porro. Ea laudantium, ipsum minima odio
+            optio aliquam at eveniet odit vel consequatur dignissimos earum non
+            necessitatibus perferendis ratione minus vero aliquid eum maiores id
+            corrupti. Voluptatum nihil magni reiciendis quisquam ab voluptates.
+            Exercitationem incidunt alias eius! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Assumenda, repellat itaque! Quas
+            molestias, officia nihil quisquam harum eligendi quaerat
+            consectetur, vero, itaque illo soluta maxime aliquam alias
+            aspernatur reprehenderit voluptatibus sit amet voluptas fugiat
+            perferendis dolorum quibusdam eos?
+          </p>
+          <p>10/10 stars</p>
+        </div>
+      </div>
+      <p class="h-categories">Book</p>
+      <div class="fav-container2">
+        <div class="fav-container2-text">
+          <a href="https://www.imdb.com/title/tt1375666/" target="_blank"
+            >Ready Player One - writer Ernest Cline</a
+          >
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab
+            facere voluptatibus nesciunt porro. Ea laudantium, ipsum minima odio
+            optio aliquam at eveniet odit vel consequatur dignissimos earum non
+            necessitatibus perferendis ratione minus vero aliquid eum maiores id
+            corrupti. Voluptatum nihil magni reiciendis quisquam ab voluptates.
+            Exercitationem incidunt alias eius! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Assumenda, repellat itaque! Quas
+            molestias, officia nihil quisquam harum eligendi quaerat
+            consectetur, vero, itaque illo soluta maxime aliquam alias
+            aspernatur reprehenderit voluptatibus sit amet voluptas fugiat
+            perferendis dolorum quibusdam eos?
+          </p>
+          <p>8/10 stars</p>
+        </div>
+        <a
+          href="https://www.adlibris.com/se/bok/ready-player-one-9780099560432"
+          target="_blank"
+        >
+          <img
+            src="https://images-na.ssl-images-amazon.com/images/I/814a7YBMTQL.jpg"
+            alt="Ready Player One book cover"
+            width="200"
+          />
+        </a>
+      </div>
+      <p class="h-categories">Tv-show</p>
+      <div class="fav-container1">
+        <a href="https://www.imdb.com/title/tt4052886/" target="_blank">
+          <img
+            src="https://i.pinimg.com/originals/d1/13/37/d113371ae7b50d8eac69a21ad889e481.jpg"
+            alt="Lucifer promotional poster"
+            width="200"
+          />
+        </a>
+        <div class="fav-container1-text">
+          <a href="https://www.imdb.com/title/tt4052886/" target="_blank"
+            >Lucifer - creator Tom Kapinos</a
+          >
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab
+            facere voluptatibus nesciunt porro. Ea laudantium, ipsum minima odio
+            optio aliquam at eveniet odit vel consequatur dignissimos earum non
+            necessitatibus perferendis ratione minus vero aliquid eum maiores id
+            corrupti. Voluptatum nihil magni reiciendis quisquam ab voluptates.
+            Exercitationem incidunt alias eius! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Assumenda, repellat itaque! Quas
+            molestias, officia nihil quisquam harum eligendi quaerat
+            consectetur, vero, itaque illo soluta maxime aliquam alias
+            aspernatur reprehenderit voluptatibus sit amet voluptas fugiat
+            perferendis dolorum quibusdam eos?
+          </p>
+          <p>7/10 stars</p>
+        </div>
+      </div>
+      <p class="h-categories">Music</p>
+      <div class="fav-container2">
+        <div class="fav-container2-text">
+          <a href="https://doomdays.house/" target="_blank"
+            >Doom Days - by Bastille</a
+          >
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ab
+            facere voluptatibus nesciunt porro. Ea laudantium, ipsum minima odio
+            optio aliquam at eveniet odit vel consequatur dignissimos earum non
+            necessitatibus perferendis ratione minus vero aliquid eum maiores id
+            corrupti. Voluptatum nihil magni reiciendis quisquam ab voluptates.
+            Exercitationem incidunt alias eius! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Assumenda, repellat itaque! Quas
+            molestias, officia nihil quisquam harum eligendi quaerat
+            consectetur, vero, itaque illo soluta maxime aliquam alias
+            aspernatur reprehenderit voluptatibus sit amet voluptas fugiat
+            perferendis dolorum quibusdam eos?
+          </p>
+          <p>10/10 stars</p>
+        </div>
+        <a href="https://doomdays.house/" target="_blank">
+          <img
+            src="https://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Bastille_DoomDays_resized.jpg"
+            alt="Doom Days Album cover"
+            width="200"
+          />
+        </a>
+      </div>
+    </article>
     <footer id="footer">
       <p>&copy; 2020 by Alice Cohen</p>
     </footer>
