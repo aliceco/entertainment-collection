@@ -78,6 +78,9 @@ body {
   align-items: center;
   color: #fffffff3;
   filter: drop-shadow(1vw 1vw 1vw black);
+  margin-top: 2vw;
+  margin-bottom: 15rem;
+
 }
 
 #home-summary h1 {
@@ -179,15 +182,15 @@ body {
 /* the menu is very wide - fix? */
 @media screen and (max-width: 700px) {
   .topnav a {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .topnav {
     padding-top: 1.8vw;
     padding-left: 1vw;
   }
   .openbtn {
-    padding-top: 1vw;
-    font-size: 1.2rem;
+    padding-top: 1.2vw;
+    font-size: 1rem;
   }
   .sidebar {
     padding-top: 4rem;
@@ -199,7 +202,7 @@ body {
     font-size: 5vw;
   }
   #home-summary h1 {
-    font-size: 8vw;
+    font-size: 6vw;
   }
   #home-summary p {
     font-size: 1.2rem;
@@ -212,6 +215,7 @@ body {
     max-width: none;
     padding-left: 5vw;
     padding-right: 5vw;
+    padding-bottom: 9vw;
   }
 
   .fav-container2 {
