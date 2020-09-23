@@ -83,13 +83,13 @@ header h1 {
   background-size: cover;
   background-position: center;
   height: 30vw;
-  filter: drop-shadow(1vw 1vw 1vw black);
+  filter: drop-shadow(1vw 1vw 1vw #000000);
 }
 
 #month-text {
   display: flex;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.63);
+  background: #0000007c;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -117,30 +117,83 @@ header h1 {
 }
 
 
-#genre-container {
+nav {
   display: flex;
   justify-content: space-around;
+  margin: 5vw;
 }
 
-nav {
-  order: 0;
-  background: white;
-  margin: 5vw;
-  padding: 4vw;
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
 main {
-  order: 1;
-  flex-grow: 2;
   display: flex;
+  flex-direction: column;
 }
 
-aside {
+main h1 {
+  font-size: 1.2rem;
+  color: #ffffff77;
+  font-style: italic;
+  letter-spacing: 0.14rem;
+  text-align: center;
+  padding: 0;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  color: #f5f5f5d7;
+  line-height: 1.5rem;
+  margin: 2vw; 
+  background: #0000007c;
+  filter: drop-shadow(1vw 1vw 1vw #000000);
+}
+
+
+article img {
+  order: 0;
+  margin: 0 3vw 3vw 3vw;
+  padding-top: 2vw;
+}
+
+
+.synopsis {
+  order: 1;
+  flex-basis: 400vw;
+  padding: 2vw 3vw 3vw 1vw; 
+  text-align: justify;
+
+}
+.synopsis a , .title {
+  color: #ffffffd7;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+
+.synopsis a:hover {
+  color: #818181;
+}
+
+.info {
+  font-style: italic;
+  color: #818181;
+  padding: 0;
+}
+
+.review {
   order: 2; 
-  flex-grow: 1;
+  text-align: justify;
+  padding-right: 3vw; 
+  margin-top: 1vw;
 }
 
-#footer {
+
+
+
+footer {
   display: flex;
   justify-content: center;
   color: white;
