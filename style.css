@@ -78,6 +78,8 @@ body {
   align-items: center;
   color: #fffffff3;
   filter: drop-shadow(1vw 1vw 1vw black);
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 
 #home-summary h1 {
@@ -89,10 +91,11 @@ body {
 
 #home-summary p {
   order: 2;
-  text-align: center;
+  text-align: justify;
   margin-left: 15vw;
   margin-right: 15vw;
   padding-bottom: 1vw;
+    line-height: 1.6rem;
 }
 
 .h-categories {
@@ -121,6 +124,8 @@ body {
   max-width: 40vw;
   display: flex;
   flex-direction: column;
+  text-align: justify;
+  line-height: 1.5rem;
 }
 
 .fav-container1-text a {
@@ -147,6 +152,8 @@ body {
   max-width: 40vw;
   display: flex;
   flex-direction: column;
+  text-align: justify;
+  line-height: 1.5rem;
 }
 
 .fav-container2-text a {
@@ -198,10 +205,11 @@ body {
     font-size: 5vw;
   }
   #home-summary h1 {
-    font-size: 8vw;
+    font-size: 6vw;
+    text-align: center;
   }
   #home-summary p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .fav-container1 {
     flex-direction: column-reverse;
@@ -219,6 +227,11 @@ body {
 
   .fav-container2 img {
     padding-left: 20vw;
+    padding-top: 2rem;
+  }
+
+  .fav-container1 img {
+    padding-top: 2rem;
   }
 
   footer {
