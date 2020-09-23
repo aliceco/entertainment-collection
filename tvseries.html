@@ -1,150 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="tvstyle.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>Tv-show suggestions</title>
-    <!-- Java script for navigation menu -->
-    <script>
-      function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("body").style.marginLeft = "250px";
-      }
 
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("body").style.marginLeft = "0";
-      }
-    </script>
-  </head>
-  <body>
-    <!--nav bar -->
-    <header>
-      <topnav class="topnav">
-        <button class="openbtn" onclick="openNav()">☰ Menu</button>
-        <a href="./index.html">Home</a>
-        <a href="">About us</a>
-      </topnav>
-      <!-- Sidebar thingy -->
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="./film.html">Film</a>
-        <a href="./tvseries.html">Tv-Series</a>
-        <a href="">Photography</a>
-        <a href="">Books</a>
-        <a href="">Youtube</a>
-        <a href="">Podcast</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style2.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <title>Tv-show suggestions</title>
+  <!-- Java script for navigation menu -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("body").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("body").style.marginLeft = "0";
+    }
+  </script>
+</head>
+<!-- id="Body" behövs för javaScript -->
+
+<body id="body">
+  <!--nav bar -->
+  <header>
+    <topnav class="topnav">
+      <button class="openbtn" onclick="openNav()">☰ Menu</button>
+      <a href="./index.html">Home</a>
+      <a href="">About us</a>
+    </topnav>
+    <!-- Sidebar thingy -->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="./film.html">Film</a>
+      <a href="./tvseries.html">Tv-Series</a>
+      <a href="">Photography</a>
+      <a href="">Books</a>
+      <a href="">Youtube</a>
+      <a href="">Podcast</a>
+    </div>
+    <h1>Tv-show suggestions</h1>
+  </header>
+  <section id="monthtv">
+    <div id="month-text">
+      <p>Show of the month</p>
+      <a href="#avatar">Avatar: The Last Airbender</a>
+  </section>
+  <nav>
+    <a href="">Action</a>
+    <a href="">Adventure</a>
+    <a href="">Comedy</a>
+    <a href="">Crime</a>
+    <a href="">Drama</a>
+    <a href="">Comedy</a>
+  </nav>
+  <main>
+    <h1>Action</h1>
+    <article id="La-Casa">
+      <img src="https://i.pinimg.com/originals/44/f7/25/44f72536e7d6cd934154e6bc66283b41.jpg"
+        alt="Lucifer promotion poster" width="200">
+      <div class="synopsis">
+        <a href="https://www.imdb.com/title/tt6468322/" target="_blank">La Casa de Papel (2017 - present) </a>
+        <p>Set in Madrid, a mysterious man known as "The Professor" recruits a group of eight people, who choose cities
+          for code-names, to carry out an ambitious plan that involves entering the Royal Mint of Spain, and escaping
+          with €2.4 billion. After taking 67 people hostage inside the Mint, the team plans to remain inside for 11 days
+          to print the money as they deal with elite police forces. In the events succeeding the initial heist, the
+          group are forced out of hiding and find themselves preparing for a second heist, this time on the Bank of
+          Spain, as they again deal with hostages and police forces.</p>
+        <p class="info">Creator: Álex Pina</p>
+        <p class="info">Actors: Álvaro Morte, Úrsula Corberó, Itziar Ituño, Alba Flores, Jaime lorente, Pedro Alonso,
+          Mugiel Herrán, Esther Acebo, Darko Perix, Hovic Keuchkerian, Paco Tous, Enrique Arce, and more. </p>
       </div>
-      <h1>Tv-show suggestions</h1>
-    </header>
-    <section id="month">
-      <div id="month-text">
-        <p>Show of the month</p>
-        <a href="https://www.imdb.com/title/tt0417299/" target="_blank">Avatar: The Last Airbender</a> 
-      </section>
-    <nav>
-      <a href="">Action</a>
-      <a href="">Adventure</a>
-      <a href="">Comedy</a>
-      <a href="">Crime</a>
-      <a href="">Drama</a>
-      <a href="">Comedy</a>
-    </nav>
-    <main>
-      <h1>Action</h1>
-      <article id="La-Casa">
-        <img src="https://i.pinimg.com/originals/44/f7/25/44f72536e7d6cd934154e6bc66283b41.jpg" alt="Lucifer promotion poster" width="200">
-        <div class="synopsis">
-          <a href="https://www.imdb.com/title/tt6468322/" target="_blank"
-          >La Casa de Papel (2017 - present) </a
-        >
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit ratione aut ullam similique magni nam.</p>
-          <p class="info">Creator: Álex Pina</p>
-          <p class="info">Actors: Álvaro Morte, Úrsula Corberó, Itziar Ituño, Alba Flores, Jaime lorente, Pedro Alonso, Mugiel Herrán, Esther Acebo, Darko Perix, Hovic Keuchkerian, Paco Tous, Enrique Arce, and more. </p>
-        </div>
-        <div class="review">
-          <p class="title">Review</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur, nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
-          <p class="title">My rating: 9.8/10</p>
-        </div>
-      </article>
-      <h1>Adventure</h1>
-      <article id="">
-        <img src="" alt="add description" width="200">
-        <div class="synopsis">
-          <a href="" target="_blank"
-            >Title (year) </a
-          >
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit ratione aut ullam similique magni nam.</p>
-          <p class="info">Creator:</p>
-          <p class="info">Actors: and more. </p>
-        </div>
-        <div class="review">
-          <p class="title">Review</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur, nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
-          <p class="title">My rating: /10</p>
-        </div>
-      </article>
-      <h1>Comedy</h1>
-        <article id="">
-          <img src="" alt="add description" width="200">
-          <div class="synopsis">
-            <a href="" target="_blank"
-              >Title (year) </a
-            >
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit ratione aut ullam similique magni nam.</p>
-            <p class="info">Creator:</p>
-            <p class="info">Actors: and more. </p>
-          </div>
-          <div class="review">
-            <p class="title">Review</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur, nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
-            <p class="title">My rating: /10</p>
-          </div>
-        </article>
-        <h1>Crime</h1>
-        <article id="Lucifer">
-          <img src="https://m.media-amazon.com/images/M/MV5BNzY1YjIxOGMtOTAyZC00YTcyLWFhMzQtZTJkYTljYzU0MGRlXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_.jpg" alt="Lucifer promotion poster" width="200">
-          <div class="synopsis">
-            <a href="https://www.imdb.com/title/tt4052886/" target="_blank"
-              >Lucifer (2016 - present) </a
-            >
-            <p>Lucifer Morningstar, bored from his sulking life in hell, comes to live in Los Angeles. While there, he helps humanity with its miseries through his experience and telepathic abilities to bring people's deepest desires and thoughts out of them. While meeting with a Detective in his nightclub (Lux), a shootout involving him and the Detective leads him to become an LAPD consultant who tries to punish people for their crimes through law and justice.</p>
-            <p class="info">Creator: Tom Kapinos</p>
-            <p class="info">Actors: Tom Ellis, Lauren German, Lesley‑Ann Brandt, D. B. Woodside, Rachel Harris, Aimee Garcia, Kevin Alejandro, and more. </p>
-          </div>
-          <div class="review">
-            <p class="title">Review</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur, nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
-            <p class="title">My rating: 9.8/10</p>
-          </div>
-        </article>
-        <h1>Drama</h1>
-        <article id="">
-          <img src="" alt="add description" width="200">
-          <div class="synopsis">
-            <a href="" target="_blank"
-              >Title (year) </a
-            >
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit ratione aut ullam similique magni nam.</p>
-            <p class="info">Creator:</p>
-            <p class="info">Actors: and more. </p>
-          </div>
-          <div class="review">
-            <p class="title">Review</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur, nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
-            <p class="title">My rating: /10</p>
-          </div>
-        </article>
-      </main>
-   
-    <footer>
-      <p>&copy; 2020 by Alice Cohen</p>
-    </footer>
-  </body>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: 9.8/10</p>
+      </div>
+    </article>
+    <h1>Adventure</h1>
+    <article id="">
+      <img src="" alt="add description" width="200">
+      <div class="synopsis">
+        <a href="" target="_blank">Title (year) </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore
+          laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem
+          voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit
+          ratione aut ullam similique magni nam.</p>
+        <p class="info">Creator:</p>
+        <p class="info">Actors: and more. </p>
+      </div>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: /10</p>
+      </div>
+    </article>
+    <h1>Comedy</h1>
+    <article id="">
+      <img src="" alt="add description" width="200">
+      <div class="synopsis">
+        <a href="" target="_blank">Title (year) </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore
+          laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem
+          voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit
+          ratione aut ullam similique magni nam.</p>
+        <p class="info">Creator:</p>
+        <p class="info">Actors: and more. </p>
+      </div>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: /10</p>
+      </div>
+    </article>
+    <h1>Crime</h1>
+    <article id="Lucifer">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BNzY1YjIxOGMtOTAyZC00YTcyLWFhMzQtZTJkYTljYzU0MGRlXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_.jpg"
+        alt="Lucifer promotion poster" width="200">
+      <div class="synopsis">
+        <a href="https://www.imdb.com/title/tt4052886/" target="_blank">Lucifer (2016 - present) </a>
+        <p>Lucifer Morningstar, bored from his sulking life in hell, comes to live in Los Angeles. While there, he helps
+          humanity with its miseries through his experience and telepathic abilities to bring people's deepest desires
+          and thoughts out of them. While meeting with a Detective in his nightclub (Lux), a shootout involving him and
+          the Detective leads him to become an LAPD consultant who tries to punish people for their crimes through law
+          and justice.</p>
+        <p class="info">Creator: Tom Kapinos</p>
+        <p class="info">Actors: Tom Ellis, Lauren German, Lesley‑Ann Brandt, D. B. Woodside, Rachel Harris, Aimee
+          Garcia, Kevin Alejandro, and more. </p>
+      </div>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: 9.8/10</p>
+      </div>
+    </article>
+    <h1>Children</h1>
+    <article id="avatar">
+      <img src="" alt="add description" width="200">
+      <div class="synopsis">
+        <a href="" target="_blank">Avatar: The Last Airbender (2005-2008) </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore
+          laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem
+          voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit
+          ratione aut ullam similique magni nam.</p>
+        <p class="info">Creator:</p>
+        <p class="info">Actors: and more. </p>
+      </div>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: /10</p>
+      </div>
+    </article>
+    <h1>Drama</h1>
+    <article id="suits">
+      <img
+        src="https://m.media-amazon.com/images/M/MV5BNmVmMmM5ZmItZDg0OC00NTFiLWIxNzctZjNmYTY5OTU3ZWU3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+        alt="Suits promotional poster" width="200" />
+      <div class="synopsis">
+        <a href="" target="_blank">Suits (2011-2019) </a>
+        <p>While running from a drug deal gone bad, brilliant young college
+          dropout Mike Ross slips into a job interview with one of New York
+          City's best legal closers, Harvey Specter. Tired of cookie-cutter
+          law-school grads, Harvey takes a gamble by hiring Mike on the spot
+          after recognizing his raw talent and photographic memory. Mike and
+          Harvey are a winning team. Although Mike is a genius, he still has a
+          lot to learn about law; and while Harvey might seem like an
+          emotionless, cold-blooded shark, Mike's sympathy and concern for
+          their cases and clients will help remind Harvey why he went into law
+          in the first place. Mike's other allies in the office include the
+          firm's best paralegal Rachel and Harvey's no-nonsense assistant
+          Donna. Proving to be an irrepressible duo and invaluable to the
+          practice, Mike and Harvey must keep their secret from everyone
+          including managing partner Jessica and Harvey's archnemesis Louis,
+          who seems intent on making Mike's life as difficult as possible.</p>
+        <p class="info">Creator: Aaron Korsh</p>
+        <p class="info">Actors: Gabriel Macht, Patric J Adams, Meghan Markle, Sarah Rafferty, Rick Hoffman, Gina Torres,
+          and more. </p>
+      </div>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: 9/10</p>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2020 by Alice Cohen</p>
+  </footer>
+</body>
+
 </html>

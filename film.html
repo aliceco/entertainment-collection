@@ -1,52 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="filmstyle.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>Film suggestions</title>
-    <!-- Java script for navigation menu -->
-    <script>
-      function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("body").style.marginLeft = "250px";
-      }
 
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("body").style.marginLeft = "0";
-      }
-    </script>
-  </head>
-  <body id="body">
-    <!--nav bar -->
-    <header>
-      <topnav class="topnav">
-        <button class="openbtn" onclick="openNav()">☰ Menu</button>
-        <a href="./index.html">Home</a>
-        <a href="">About us</a>
-      </topnav>
-      <!-- Sidebar thingy -->
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="./film.html">Film</a>
-        <a href="">Tv-Series</a>
-        <a href="">Photography</a>
-        <a href="">Books</a>
-        <a href="">Youtube</a>
-        <a href="">Podcast</a>
-      </div>
-      <h1>Film suggestions</h1>
-    </header>
-    <div class="container">
-      <nav></nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style2.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <title>Filmsuggestions</title>
+  <!-- Java script for navigation menu -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("body").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("body").style.marginLeft = "0";
+    }
+  </script>
+</head>
+<!-- id="Body" behövs för javaScript -->
+<body id="body">
+  <!--nav bar -->
+  <header>
+    <topnav class="topnav">
+      <button class="openbtn" onclick="openNav()">☰ Menu</button>
+      <a href="./index.html">Home</a>
+      <a href="">About us</a>
+    </topnav>
+    <!-- Sidebar thingy -->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="./film.html">Film</a>
+      <a href="./tvseries.html">Tv-Series</a>
+      <a href="">Photography</a>
+      <a href="">Books</a>
+      <a href="">Youtube</a>
+      <a href="">Podcast</a>
     </div>
-    <footer id="footer">
-      <p>&copy; 2020 by Alice Cohen</p>
-    </footer>
-  </body>
+    <h1>Film suggestions</h1>
+  </header>
+  <section id="monthfilm">
+    <div id="month-text">
+      <p>Show of the month</p>
+      <a href="" target="_blank">Title</a>
+  </section>
+  <nav>
+    <a href="">Action</a>
+    <a href="">Adventure</a>
+    <a href="">Comedy</a>
+    <a href="">Crime</a>
+    <a href="">Drama</a>
+    <a href="">Comedy</a>
+  </nav>
+  <main>
+    <h1>Action</h1>
+    <article id="">
+      <img src="" alt="add description" width="200">
+      <div class="synopsis">
+        <a href="" target="_blank">Title (year) </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore
+          laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem
+          voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit
+          ratione aut ullam similique magni nam.</p>
+        <p class="info">Creator:</p>
+        <p class="info">Actors: and more. </p>
+      </div>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: /10</p>
+      </div>
+    </article>
+    <h1>Adventure</h1>
+    <article id="">
+      <img src="" alt="add description" width="200">
+      <div class="synopsis">
+        <a href="" target="_blank">Title (year) </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore
+          laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem
+          voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit
+          ratione aut ullam similique magni nam.</p>
+        <p class="info">Creator:</p>
+        <p class="info">Actors: and more. </p>
+      </div>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: /10</p>
+      </div>
+    </article>
+    <h1>Comedy</h1>
+    <article id="">
+      <img src="" alt="add description" width="200">
+      <div class="synopsis">
+        <a href="" target="_blank">Title (year) </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore
+          laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem
+          voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit
+          ratione aut ullam similique magni nam.</p>
+        <p class="info">Creator:</p>
+        <p class="info">Actors: and more. </p>
+      </div>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: /10</p>
+      </div>
+    </article>
+    <h1>Crime</h1>
+    <article id="">
+      <img src="" alt="add description" width="200">
+      <div class="synopsis">
+        <a href="" target="_blank">Title (year) </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore
+          laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem
+          voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit
+          ratione aut ullam similique magni nam.</p>
+        <p class="info">Creator:</p>
+        <p class="info">Actors: and more. </p>
+      </div>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: /10</p>
+      </div>
+    </article>
+    <h1>Drama</h1>
+    <article id="">
+      <img src="" alt="add description" width="200">
+      <div class="synopsis">
+        <a href="" target="_blank">Title (year) </a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus itaque consequatur at quod, dolore
+          laboriosam iusto fugit distinctio quos dolorum nisi ea officia rerum voluptatum laborum molestiae autem
+          voluptatem. Ut iure, sed aliquid suscipit quibusdam rem recusandae ex id. Exercitationem, harum expedita fugit
+          ratione aut ullam similique magni nam.</p>
+        <p class="info">Creator:</p>
+        <p class="info">Actors: and more. </p>
+      </div>
+      <div class="review">
+        <p class="title">Review</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, asperiores! Nam maiores ad necessitatibus
+          eveniet doloremque omnis itaque aliquid velit. Quos hic ab obcaecati maxime magnam commodi repudiandae, soluta
+          beatae quidem explicabo nesciunt expedita delectus esse rerum minima dolorem dicta optio ullam consectetur,
+          nobis officiis. Dolores ducimus itaque ipsum repudiandae.</p>
+        <p class="title">My rating: /10</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2020 by Alice Cohen</p>
+  </footer>
+</body>
 </html>
