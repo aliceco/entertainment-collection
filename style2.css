@@ -71,7 +71,8 @@ header h1 {
 
 #monthfilm{
   display: flex;
-  background-image: url(https://www.watchhunter.org/wp-content/uploads/2017/08/dunkirk-movie-header.jpg);
+  /* background-image: url(https://www.watchhunter.org/wp-content/uploads/2017/08/dunkirk-movie-header.jpg); */
+  background-image: url(https://coverfiles.alphacoders.com/448/thumb-44869.jpg);
   background-size: cover;
   background-position: center;
   height: 30vw;
@@ -158,6 +159,7 @@ article img {
   margin: 0 3vw 3vw 3vw;
   padding-top: 2vw;
   width: 17vw;
+  height: 50vh;
 
 }
 
