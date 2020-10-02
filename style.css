@@ -20,7 +20,7 @@ body {
 
 .topnav a:hover,
 .openbtn:hover {
-  color: #818181;
+  color: #818181; 
 }
 
 .openbtn {
@@ -58,7 +58,7 @@ body {
   text-decoration: none;
   font-size: 25px;
   color: #b8b8b8;
-  display: block; /* Keeps the text going*/
+  display: block;
   transition: 0.3s;
 }
 
@@ -69,8 +69,6 @@ body {
   font-size: 2rem;
   margin-left: 50px;
 }
-
-/* FONT FAMILY WHAT */
 
 #home-summary {
   display: flex;
@@ -138,7 +136,6 @@ body {
 .fav-container1-text a:hover {
   color: #818181;
 }
-/* Ready player 1 Homepage */
 
 .fav-container2 {
   display: flex;
@@ -173,16 +170,12 @@ body {
   filter: drop-shadow(1vw 1vw 1vw black);
 }
 
-/* footer */
-
 footer {
   text-align: center;
   color: white;
   
 }
 
-/* Media screen */
-/* the menu is very wide - fix? */
 @media screen and (max-width: 700px) {
   .topnav a {
     font-size: 1.2rem;

@@ -1,199 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="entertainment suggestions">
-    <link href="style.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>Entertainment Collection</title>
-    <!-- Java script for navigation menu -->
-    <script>
-      function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("body").style.marginLeft = "250px";
-      }
 
-      function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("body").style.marginLeft = "0";
-      }
-    </script>
-  </head>
-  <body id="body">
-    <!--nav bar -->
-    <header>
-      <topnav class="topnav">
-        <button class="openbtn" onclick="openNav()">☰ Menu</button>
-        <a href="./index.html" target="_self">Home</a>
-        <a href="">About us</a>
-      </topnav>
-      <!-- Sidebar thingy -->
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="./film.html">Film</a>
-        <a href="./tvseries.html">Tv-Series</a>
-        <a href="#">Books</a>
-        <a href="#">Youtube</a>
-        <a href="#">Podcast</a>
-        <a href="#">Music</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="entertainment suggestions">
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+  <title>Entertainment Collection</title>
+  <!-- Java script for navigation menu -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("body").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("body").style.marginLeft = "0";
+    }
+  </script>
+</head>
+
+<body id="body">
+  <!--navbar -->
+  <header>
+    <topnav class="topnav">
+      <button class="openbtn" onclick="openNav()">☰ Menu</button>
+      <a href="./index.html" target="_self">Home</a>
+      <a href="#">About us</a>
+    </topnav>
+    <!-- Sidebar thingy -->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="./film.html">Film</a>
+      <a href="./tvseries.html">Tv-Series</a>
+      <a href="#">Books</a>
+      <a href="#">Youtube</a>
+      <a href="#">Podcast</a>
+      <a href="#">Music</a>
+    </div>
+  </header>
+  <article id="home-summary">
+    <h1>Entertainment Collection</h1>
+    <p>
+      Welcome to the Entertainment Collection. You might wonder what the hell
+      this is, well let me explain. This is the place for anyone who's looking
+      for entertainment. Whether it's a film, something to listen to or a good
+      book to read. Click on the menu to find the different types of
+      entertainment tips we've collected. This all may sound like a silly
+      idea, but let's be real how many times have you not sitten scrolled
+      endlessly on Netflix trying to find something good to watch? Too many
+      times I suspect. So who knows, this might be helpful!
+    </p>
+    <p>Scroll down to see my current favourites</p>
+  </article>
+  <p class="h-categories">Movie</p>
+  <article>
+    <div class="fav-container1">
+      <a href="https://www.imdb.com/title/tt1375666/" target="_blank">
+        <img
+          src="https://resizing.flixster.com/N7aWhwhd6Sm3_2D5qUQaK9M9t4U=/206x305/v1.bTsxMTE2NjcyNTtqOzE4NjI0OzEyMDA7ODAwOzEyMDA"
+          alt="Inception movie poster" />
+      </a>
+      <div class="fav-container1-text">
+        <a href="https://www.imdb.com/title/tt1375666/" target="_blank">Inception - dir. Christoffer Nolan</a>
+        <p>
+          Dom Cobb is a skilled thief, the absolute best in the dangerous art
+          of extraction, stealing valuable secrets from deep within the
+          subconscious during the dream state, when the mind is at its most
+          vulnerable. Cobb's rare ability has made him a coveted player in
+          this treacherous new world of corporate espionage, but it has also
+          made him an international fugitive and cost him everything he has
+          ever loved. Now Cobb is being offered a chance at redemption. One
+          last job could give him his life back but only if he can accomplish
+          the impossible, inception. Instead of the perfect heist, Cobb and
+          his team of specialists have to pull off the reverse: their task is
+          not to steal an idea, but to plant one. If they succeed, it could be
+          the perfect crime. But no amount of careful planning or expertise
+          can prepare the team for the dangerous enemy that seems to predict
+          their every move. An enemy that only Cobb could have seen coming. - imdb
+        </p>
+        <a href="./film.html#inception">My rating: 9.8/10</a>
       </div>
-    </header>
-    <!-- Article or something else? -->
-    <article id="home-summary">
-      <!-- <h2>Welcome to the</h2> -->
-      <h1>Entertainment Collection</h1>
-      <p>
-        Welcome to the Entertainment Collection. You might wonder what the hell
-        this is, well let me explain. This is the place for anyone who's looking
-        for entertainment. Whether it's a film, something to listen to or a good
-        book to read. Click on the menu to find the different types of
-        entertainment tips we've collected. This all may sound like a silly
-        idea, but let's be real how many times have you not sitten scrolled
-        endlessly on Netflix trying to find something good to watch? Too many
-        times I suspect. So who knows, this might be helpful!
-      </p>
-      <p>Scroll down to see my current favourites</p>
-    </article>
-    <p class="h-categories">Movie</p>
-    <article>
-      <div class="fav-container1">
-        <a href="https://www.imdb.com/title/tt1375666/" target="_blank">
-          <img
-            src="https://resizing.flixster.com/N7aWhwhd6Sm3_2D5qUQaK9M9t4U=/206x305/v1.bTsxMTE2NjcyNTtqOzE4NjI0OzEyMDA7ODAwOzEyMDA"
-            alt="Inception movie poster"
-          />
-        </a>
-        <div class="fav-container1-text">
-          <a href="https://www.imdb.com/title/tt1375666/" target="_blank"
-            >Inception - dir. Christoffer Nolan</a
-          >
-          <p>
-            Dom Cobb is a skilled thief, the absolute best in the dangerous art
-            of extraction, stealing valuable secrets from deep within the
-            subconscious during the dream state, when the mind is at its most
-            vulnerable. Cobb's rare ability has made him a coveted player in
-            this treacherous new world of corporate espionage, but it has also
-            made him an international fugitive and cost him everything he has
-            ever loved. Now Cobb is being offered a chance at redemption. One
-            last job could give him his life back but only if he can accomplish
-            the impossible, inception. Instead of the perfect heist, Cobb and
-            his team of specialists have to pull off the reverse: their task is
-            not to steal an idea, but to plant one. If they succeed, it could be
-            the perfect crime. But no amount of careful planning or expertise
-            can prepare the team for the dangerous enemy that seems to predict
-            their every move. An enemy that only Cobb could have seen coming. - imdb
-          </p>
-          <a href="./film.html#inception">My rating: 9.8/10</a>
-        </div>
+    </div>
+    <p class="h-categories">Book</p>
+    <div class="fav-container2">
+      <div class="fav-container2-text">
+        <a href="https://www.adlibris.com/se/bok/ready-player-one-9780099560432" target="_blank">Ready Player One -
+          writer Ernest Cline</a>
+        <p>
+          It's the year 2044, and the real world has become an ugly place.
+          We're out of oil. We've wrecked the climate. Famine, poverty, and
+          disease are widespread. Like most of humanity, Wade Watts escapes
+          this depressing reality by spending his waking hours jacked into the
+          OASIS, a sprawling virtual utopia where you can be anything you want
+          to be, where you can live and play and fall in love on any of ten
+          thousand planets. And like most of humanity, Wade is obsessed by the
+          ultimate lottery ticket that lies concealed within this alternate
+          reality: OASIS founder James Halliday, who dies with no heir, has
+          promised that control of the OASIS - and his massive fortune - will
+          go to the person who can solve the riddles he has left scattered
+          throughout his creation. For years, millions have struggled
+          fruitlessly to attain this prize, knowing only that the riddles are
+          based in the culture of the late twentieth century. And then Wade
+          stumbles onto the key to the first puzzle. Suddenly, he finds
+          himself pitted against thousands of competitors in a desperate race
+          to claim the ultimate prize, a chase that soon takes on terrifying
+          real-world dimensions - and that will leave both Wade and his world
+          profoundly changed. - adlibris
+        </p>
+        <a href=" link to small review ">My rating: 7/10</a>
       </div>
-      <p class="h-categories">Book</p>
-      <div class="fav-container2">
-        <div class="fav-container2-text">
-          <a
-            href="https://www.adlibris.com/se/bok/ready-player-one-9780099560432"
-            target="_blank"
-            >Ready Player One - writer Ernest Cline</a
-          >
-          <p>
-            It's the year 2044, and the real world has become an ugly place.
-            We're out of oil. We've wrecked the climate. Famine, poverty, and
-            disease are widespread. Like most of humanity, Wade Watts escapes
-            this depressing reality by spending his waking hours jacked into the
-            OASIS, a sprawling virtual utopia where you can be anything you want
-            to be, where you can live and play and fall in love on any of ten
-            thousand planets. And like most of humanity, Wade is obsessed by the
-            ultimate lottery ticket that lies concealed within this alternate
-            reality: OASIS founder James Halliday, who dies with no heir, has
-            promised that control of the OASIS - and his massive fortune - will
-            go to the person who can solve the riddles he has left scattered
-            throughout his creation. For years, millions have struggled
-            fruitlessly to attain this prize, knowing only that the riddles are
-            based in the culture of the late twentieth century. And then Wade
-            stumbles onto the key to the first puzzle. Suddenly, he finds
-            himself pitted against thousands of competitors in a desperate race
-            to claim the ultimate prize, a chase that soon takes on terrifying
-            real-world dimensions - and that will leave both Wade and his world
-            profoundly changed. - adlibris
-          </p>
-          <a href=" link to small review ">My rating: 7/10</a>
-        </div>
-        <a
-          href="https://www.adlibris.com/se/bok/ready-player-one-9780099560432"
-          target="_blank"
-        >
-          <img
-            src="https://images-na.ssl-images-amazon.com/images/I/814a7YBMTQL.jpg"
-            alt="Ready Player One book cover"
-            width="200"
-          />
-        </a>
+      <a href="https://www.adlibris.com/se/bok/ready-player-one-9780099560432" target="_blank">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/814a7YBMTQL.jpg" alt="Ready Player One book cover"
+          width="200" />
+      </a>
+    </div>
+    <p class="h-categories">Tv-show</p>
+    <div class="fav-container1">
+      <a href="https://www.imdb.com/title/tt1632701/" target="_blank">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BNmVmMmM5ZmItZDg0OC00NTFiLWIxNzctZjNmYTY5OTU3ZWU3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+          alt="Suits promotional poster" width="200" />
+      </a>
+      <div class="fav-container1-text">
+        <a href="https://www.imdb.com/title/tt1632701/" target="_blank">Suits - creator Aaron Korsh</a>
+        <p>
+          While running from a drug deal gone bad, brilliant young college
+          dropout Mike Ross slips into a job interview with one of New York
+          City's best legal closers, Harvey Specter. Tired of cookie-cutter
+          law-school grads, Harvey takes a gamble by hiring Mike on the spot
+          after recognizing his raw talent and photographic memory. Mike and
+          Harvey are a winning team. Although Mike is a genius, he still has a
+          lot to learn about law; and while Harvey might seem like an
+          emotionless, cold-blooded shark, Mike's sympathy and concern for
+          their cases and clients will help remind Harvey why he went into law
+          in the first place. Mike's other allies in the office include the
+          firm's best paralegal Rachel and Harvey's no-nonsense assistant
+          Donna. Proving to be an irrepressible duo and invaluable to the
+          practice, Mike and Harvey must keep their secret from everyone
+          including managing partner Jessica and Harvey's archnemesis Louis,
+          who seems intent on making Mike's life as difficult as possible.
+          <br />- imdb
+        </p>
+        <a href="./tvseries.html#suits">My rating: 8/10</a>
       </div>
-      <p class="h-categories">Tv-show</p>
-      <div class="fav-container1">
-        <a href="https://www.imdb.com/title/tt1632701/" target="_blank">
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BNmVmMmM5ZmItZDg0OC00NTFiLWIxNzctZjNmYTY5OTU3ZWU3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
-            alt="Suits promotional poster"
-            width="200"
-          />
-        </a>
-        <div class="fav-container1-text">
-          <a href="https://www.imdb.com/title/tt1632701/" target="_blank"
-            >Suits - creator Aaron Korsh</a
-          >
-          <p>
-            While running from a drug deal gone bad, brilliant young college
-            dropout Mike Ross slips into a job interview with one of New York
-            City's best legal closers, Harvey Specter. Tired of cookie-cutter
-            law-school grads, Harvey takes a gamble by hiring Mike on the spot
-            after recognizing his raw talent and photographic memory. Mike and
-            Harvey are a winning team. Although Mike is a genius, he still has a
-            lot to learn about law; and while Harvey might seem like an
-            emotionless, cold-blooded shark, Mike's sympathy and concern for
-            their cases and clients will help remind Harvey why he went into law
-            in the first place. Mike's other allies in the office include the
-            firm's best paralegal Rachel and Harvey's no-nonsense assistant
-            Donna. Proving to be an irrepressible duo and invaluable to the
-            practice, Mike and Harvey must keep their secret from everyone
-            including managing partner Jessica and Harvey's archnemesis Louis,
-            who seems intent on making Mike's life as difficult as possible.
-            <br />- imdb
-          </p>
-          <a href="./tvseries.html#suits">My rating: 8/10</a>
-        </div>
+    </div>
+    <p class="h-categories">Music</p>
+    <div class="fav-container2">
+      <div class="fav-container2-text">
+        <a href="https://doomdays.house/" target="_blank">Doom Days - by Bastille</a>
+        <p>
+          The album was described as a concept album about a "colourful" night
+          at a party, as well as "the importance of escapism, hope and the
+          preciousness of close friendships". The party was additionally
+          described as having an atmosphere of "turbulent emotional chaos" and
+          "euphoria, carelessness and a small dose of madness". Each song is
+          set at a specific time during this night; these times were also
+          revealed through the Doom Days Society website. - Wikipedia
+        </p>
+        <a href=" link to small review ">My rating: 10/10</a>
       </div>
-      <p class="h-categories">Music</p>
-      <div class="fav-container2">
-        <div class="fav-container2-text">
-          <a href="https://doomdays.house/" target="_blank"
-            >Doom Days - by Bastille</a
-          >
-          <p>
-            The album was described as a concept album about a "colourful" night
-            at a party, as well as "the importance of escapism, hope and the
-            preciousness of close friendships". The party was additionally
-            described as having an atmosphere of "turbulent emotional chaos" and
-            "euphoria, carelessness and a small dose of madness". Each song is
-            set at a specific time during this night; these times were also
-            revealed through the Doom Days Society website. - Wikipedia
-          </p>
-          <a href=" link to small review ">My rating: 10/10</a>
-        </div>
-        <a href="https://doomdays.house/" target="_blank">
-          <img
-            src="https://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Bastille_DoomDays_resized.jpg"
-            alt="Doom Days Album cover"
-            width="200"
-          />
-        </a>
-      </div>
-    </article>
-    <footer >
-      <p>&copy; 2020 by Alice Cohen</p>
-    </footer>
-  </body>
+      <a href="https://doomdays.house/" target="_blank">
+        <img
+          src="https://cdn2.thelineofbestfit.com/images/remote/https_cdn2.thelineofbestfit.com/media/2014/Bastille_DoomDays_resized.jpg"
+          alt="Doom Days Album cover" width="200" />
+      </a>
+    </div>
+  </article>
+  <footer>
+    <p>&copy; 2020 by Alice Cohen</p>
+  </footer>
+</body>
+
 </html>
